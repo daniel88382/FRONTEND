@@ -14,7 +14,7 @@ export default function App() {
   const fetchData = async () => {
     try {
       setError(false);
-      const res = await axios.get("http://localhost:8000/predict");
+      const res = await axios.get("https://backend-2zvk.onrender.com/predict");
       setData(res.data);
     } catch {
       setError(true);
